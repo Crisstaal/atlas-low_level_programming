@@ -12,11 +12,10 @@
 shash_table_t *shash_table_create(unsigned long int size)
 {
     shash_table_t *ht;
-
+    
     ht = malloc(sizeof(shash_table_t));
     if (!ht)
         return (NULL);
-
     ht->size = size;
     ht->array = calloc(size, sizeof(shash_node_t *));
     if (!ht->array)
@@ -44,8 +43,8 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
     if (!ht || !key || *key == '\0' || !value)
         return (0);
-
-    index = key_index((const unsigned char *)key, ht->size);
+    
+        index = key_index((const unsigned char *)key, ht->size);
     temp = ht->array[index];
 
     while (temp)
