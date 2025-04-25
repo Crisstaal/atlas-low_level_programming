@@ -1,6 +1,4 @@
-🌟 Advanced Hash Tables Project 🌟
-
-
+# 🌟 Advanced Hash Tables Project 🌟
 
 ## 🧩 Project Overview
 
@@ -20,10 +18,6 @@ This project implements **sorted hash tables** in **C**, inspired by PHP’s has
 2. Compile the code:
     ```bash
     gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-sorted_hash_table.c 1-djb2.c 2-key_index.c -o sht
-    ```
-3. Run the program:
-    ```bash
-    ./sht
     ```
 
 Thanks for checking out my project! ✨
