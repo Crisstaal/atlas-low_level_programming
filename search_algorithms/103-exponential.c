@@ -73,7 +73,6 @@ int exponential_search(int *array, size_t size, int value)
 		printf("Value checked array[%lu] = [%d]\n", bound, array[bound]);
 		bound *= 2;
 	}
-
 	left = bound / 2;
 	right = bound < size ? bound : size - 1;
 	printf("Value found between indexes [%lu] and [%lu]\n", left, right);
