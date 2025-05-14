@@ -59,6 +59,8 @@ int binary_search_expo(int *array, size_t left, size_t right, int value)
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t bound = 1;
+	size_t left;
+	size_t right;
 
 	if (!array)
 		return (-1);
@@ -72,8 +74,8 @@ int exponential_search(int *array, size_t size, int value)
 		bound *= 2;
 	}
 
-	size_t left = bound / 2;
-	size_t right = bound < size ? bound : size - 1;
+	left = bound / 2;
+	right = bound < size ? bound : size - 1;
 	printf("Value found between indexes [%lu] and [%lu]\n", left, right);
 	return (binary_search_expo(array, left, right, value));
 }
